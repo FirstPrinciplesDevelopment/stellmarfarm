@@ -5,7 +5,9 @@
   "private": true,
   "scripts": {
     "dev": "parcel 'src/**/*.html' 'src/**/*.js'",
-    "build": "parcel build 'src/**/*.html' 'src/**/*.js'"
+    "dev.windows": "parcel src/**/*.html src/**/*.js",
+    "build": "parcel build 'src/**/*.html' 'src/**/*.js'",
+    "build.windows": "parcel build src/**/*.html src/**/*.js"
   },
   "keywords": [],
   "author": "",
