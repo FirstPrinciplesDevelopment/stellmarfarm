@@ -1,0 +1,69 @@
+<div>
+  <div>
+    <form id="monster-vote-form">
+      <div class="space-y-12">
+        <div class="border-b border-gray-900/10 pb-12">
+          <div class="py-8">
+            <h2 class="text-xl font-semibold leading-7 text-gray-900">Vote For Your Favorite Monster!</h2>
+            <p class="m-1 text-sm leading-6 text-gray-600">All of these monsters are hiding somewhere in our corn maze.
+            </p>
+          </div>
+
+          <fieldset id="monster-fieldset" class="min-w-full">
+            <legend class="text-sm font-semibold leading-6 text-gray-900">Favorite Monster</legend>
+            <p class="mt-1 text-sm leading-6 text-gray-600">Which Monster Was Your Favorite?</p>
+            <div id="monster-options"
+              class="my-8 min-w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-6 lg:gap-x-6">
+              <!--Monsters will be dynamically inserted here.-->
+            </div>
+          </fieldset>
+
+          <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+            <div class="sm:col-span-4">
+              <label for="name" class="block text-sm font-medium leading-6 text-gray-900">Name</label>
+              <div class="mt-2">
+                <input type="text" name="name" id="name" autocomplete="given-name"
+                  class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sf-orange-600 sm:text-sm sm:leading-6">
+              </div>
+            </div>
+
+            <div class="sm:col-span-4">
+              <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
+              <div class="mt-2">
+                <input id="email" name="email" type="email" autocomplete="email"
+                  class="required block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sf-orange-600 sm:text-sm sm:leading-6">
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-10 space-y-10">
+            <fieldset>
+              <legend class="text-sm font-semibold leading-6 text-gray-900">Contact Preferences</legend>
+              <div class="mt-6 space-y-6">
+                <div class="relative flex gap-x-3">
+                  <div class="flex h-6 items-center">
+                    <input id="contact_consent" name="contact_consent" type="checkbox" value="true"
+                      class="h-4 w-4 rounded border-gray-300 text-sf-orange-600 focus:ring-sf-orange-600">
+                  </div>
+                  <div class="text-sm leading-6">
+                    <label for="contact_consent" class="font-medium text-gray-900">I want to receive emails.</label>
+                    <p class="text-gray-500">Check to receive occasional emails from Stellmar Farm.</p>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-6 flex items-center justify-end gap-x-6">
+        <!-- TODO: remove cancel button -->
+        <button type="reset" class="text-sm font-semibold leading-6 text-gray-900">Cancel</button>
+        <button type="submit" id="monster-form-submit"
+          class="rounded-md bg-sf-orange-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-sf-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sf-orange-600">Vote</button>
+      </div>
+    </form>
+
+  </div>
+</div>
