@@ -9,116 +9,101 @@
 
     <link href="./main.css" rel="stylesheet">
     <script type="module" src="./app.js"></script>
+    <script type="module" src="./components/hours/hours.js"></script>
     <script type="module" src="./components/footer/footer.js"></script>
     <script type="module" src="./components/nav/nav.js"></script>
 </head>
 
-<body class="text-sf-grey-900">
+<body class="text-sf-grey-900 bg-blue-500 sm:bg-green-500 md:bg-indigo-500 lg:bg-red-500 xl:bg-black ...">
 
     <!--Custom Nav Component-->
     <stellmar-nav></stellmar-nav>
 
     <!--Main Content-->
-    <div id="main-content" class="transition-all ease-in-out duration-300 bg-sf-grey-50">
-        <div class="absolute top-0 w-full h-1 bg-sf-orange-600"></div>
+    <div id="main-content" class="transition-all ease-in-out duration-300"> <!--bg-sf-grey-50"-->
+        <div class="absolute top-0 w-full h-1 bg-sf-orange-400"></div>
         <div class="mx-auto container max-w-2xl">
             <div class="flex justify-center p-8">
+                <!--testing -->
 
-
+                
                 <div>
-                    <div class="p-8">
-                        <h1 class="text-2xl md:text-4xl py-8">STELLMAR FARM</h1>
-                        <div class="">
-                            <img class="rounded"
-                                src="https://cdn.pixabay.com/photo/2017/09/10/20/47/pumpkin-2736964_960_720.jpg">
+
+                <!--end test-->
+
+                
+                    
+                    <h2 class="text-4xl font-extrabold dark:text-white">STELLMAR FARM <small
+                            class="ms-2 font-semibold text-gray-500 dark:text-gray-400"> est. 1999</small></h2>
+                    <p class="my-4 text-lg text-white">Giant pumpkins, haunted corn maze, jack-o-lanterns,
+                        preserves, fall crafts and decor.</p>
+                        <div class="justify-center p-8">
+                            <img class="rounded" src="images/stellmarfarm-logo.png">
                         </div>
-                    </div>
-                    <div class="p-8">
-                        <ul class="bg-sf-grey-100 rounded py-2 max-w-xs">
-                            <li class="flex justify-between px-4">
-                                <div>Monday</div>
-                                <div>Closed</div>
-                            </li>
-                            <li class="flex justify-between px-4">
-                                <div>Tuesday</div>
-                                <div>Closed</div>
-                            </li>
-                            <li class="flex justify-between px-4">
-                                <div>Wednesday</div>
-                                <div>Closed</div>
-                            </li>
-                            <li class="flex justify-between px-4">
-                                <div>Thursday</div>
-                                <div>Closed</div>
-                            </li>
-                            <li class="flex justify-between px-4">
-                                <div>Friday</div>
-                                <div>Noon-4pm</div>
-                            </li>
-                            <li class="flex justify-between px-4">
-                                <div>Saturday</div>
-                                <div>10am-4pm</div>
-                            </li>
-                            <li class="flex justify-between px-4">
-                                <div>Sunday</div>
-                                <div>10am-4pm</div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="p-8">
-                        <p>
-                            Come and see the award winning giant pumpkins and giant squash
-                            that make this farm unique in the area. The "pumpkin guys" will
-                            gladly take you on a tour of the GIANT pumpkin patch and even
-                            share their secrets about growing giant pumpkins. Come to the
-                            craft barn where you will find a stunning assortment of dried
-                            and silk flower arrangements made from flowers grown right on
-                            the farm. Check out our hand painted gourds. Decorate for fall
-                            with the many varieties of decorative corn, gourds, squash,
-                            straw bales, and corn stalks. Have a walk through our corn maze
-                            with the family ($). We offer natural skin care products
-                            featuring our own beeswax. The aroma of mulled cider warming on
-                            the woodstove will warm your heart. You will find plenty of
-                            parking and wheelchair accessibility.
-                        </p>
-                    </div>
-                    <div class="p-8">
-                        <div class="">
-                            <h4 class="text-sf-grey-900 font-semibold">Address</h4>
-                            <div>136 Sand Bar Rd.</div>
-                            <div>Little Britain, ON K0M 2C0</div>
-                        </div>
-                    </div>
-                    <div class="p-8">
-                        <div class="">
-                            <h4 class="text-sf-grey-900 font-semibold">Contact</h4>
-                            <div>
-                                <a class=" hover:text-sf-orange-700"
-                                    href="mailto:info@stellmarfarm.com">info@stellmarfarm.com</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-8">
-                        <p>
-                            <a class="text-sf-grey-600 hover:text-sf-orange-700 font-semibold"
-                                href="https://www.facebook.com/STELLMARFARM.LITTLEBRITAIN">Please click to like our page
-                                on
-                                Facebook!</a>
-                        </p>
+
+                   
+                
+
+                <!--Custom Hours Component-->
+                <stellmar-hours> </stellmar-hours>
+
+
+                <div class="p-8">
+                    <p>
+                        Come and see the award winning giant pumpkins and giant squash
+                        that make this farm unique in the area. The "pumpkin guys" will
+                        gladly take you on a tour of the GIANT pumpkin patch and even
+                        share their secrets about growing giant pumpkins. Come to the
+                        craft barn where you will find a stunning assortment of dried
+                        and silk flower arrangements made from flowers grown right on
+                        the farm. Check out our hand painted gourds. Decorate for fall
+                        with the many varieties of decorative corn, gourds, squash,
+                        straw bales, and corn stalks. Have a walk through our corn maze
+                        with the family ($). We offer natural skin care products
+                        featuring our own beeswax. The aroma of mulled cider warming on
+                        the woodstove will warm your heart. You will find plenty of
+                        parking and wheelchair accessibility.
+                    </p>
+                </div>
+                <div class="p-8">
+                    <div class="">
+                        <h4 class="text-sf-grey-900 font-semibold">Address</h4>
+                        <div>136 Sand Bar Rd.</div>
+                        <div>Little Britain, ON K0M 2C0</div>
                     </div>
                 </div>
-
-
-                <div class="hidden -translate-x-[248px] md:ml-[300px] md:w-1/2 w-1/2"></div>
-                <div class="hidden translate-x-[248px]"></div>
-
-
+                <div class="p-8">
+                    <div class="">
+                        <h4 class="text-sf-grey-900 font-semibold">Contact</h4>
+                        <div>
+                            <a class=" hover:text-sf-orange-700"
+                                href="mailto:info@stellmarfarm.com">info@stellmarfarm.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-8">
+                    <p>
+                        <a class="text-sf-grey-600 hover:text-sf-orange-700 font-semibold"
+                            href="https://www.facebook.com/STELLMARFARM.LITTLEBRITAIN">Please click to like our page
+                            on
+                            Facebook!</a>
+                    </p>
+                </div>
             </div>
+
+
+            <div class="hidden -translate-x-[248px] md:ml-[300px] md:w-1/2 w-1/2"></div>
+            <div class="hidden translate-x-[248px]"></div>
+
+
         </div>
+    </div>
     </div>
 
     <!--Custom Footer Component-->
     <stellmar-footer></stellmar-footer>
+
+
 
 </body>
 

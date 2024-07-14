@@ -4,8 +4,8 @@
   "description": "Stellmar Farm website",
   "private": true,
   "scripts": {
-    "dev": "parcel 'src/**/*.html' 'src/**/*.js'",
-    "build": "parcel build 'src/**/*.html' 'src/**/*.js'"
+   "dev": "parcel src\\**\\*.html src\\**\\*.js",
+    "build": "parcel build src\\**\\*.html src\\**\\*.js"
   },
   "keywords": [],
   "author": "",
