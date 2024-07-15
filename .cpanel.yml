@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/example/public_html/StellGit
+    - export DEPLOYPATH=/home/stellmar/repositories/stellmarfarm
     - /bin/cp -R images $DEPLOYPATH
      - /bin/cp -R recipes $DEPLOYPATH
       - /bin/cp -R components $DEPLOYPATH

@@ -4,7 +4,7 @@
   "description": "Stellmar Farm website",
   "private": true,
   "scripts": {
-    "dev": "parcel 'src/**/*.html' 'src/**/*.js'",
+    "dev": "parcel src/**/*.html src/**/*.js",
     "serve": "parcel 'src/**/*.html'",
     "build": "parcel build 'src/**/*.html' 'src/**/*.js'"
   },
