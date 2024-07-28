@@ -115,6 +115,11 @@ class Vote extends HTMLElement {
             // Reset the form state.
             form.reset();
             // TODO: show a success message to the user.
+            //var xhttp = new XMLHttpRequest();
+            //xhttp.open("GET", "demo.html", true);
+            //xhttp.send();
+            window.open("demo.html");
+            
 
         } catch (error) {
             // TODO: show an error message to the user.
