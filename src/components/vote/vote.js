@@ -66,10 +66,10 @@ class Vote extends HTMLElement {
     // Note: nothing is escaped or sanitized, input is assumed trusted.
     buildMonsterOption(json) {
         const html = `
-        <div class="w-48 lg:w-60 relative place-self-center justify-self-center">
+        <div class="peer w-48 lg:w-60 relative place-self-center justify-self-center peer-has-[>input:checked]:opacity-50 has-[~div>input:checked]:opacity-50">
             <input id="monster-${json.id}" name="favorite_monster" value="${json.id}" type="radio" class="peer hidden">
             <label for="monster-${json.id}"
-            class="relative peer-checked:ring-4 peer-checked:ring-sf-orange-600 rounded-lg block text-sm font-medium leading-6">
+                class="relative peer-checked:ring-4 peer-checked:ring-sf-orange-600 rounded-lg block text-sm font-medium leading-6">
             <img class="relative w-48 lg:w-60 h-72 object-cover overflow-hidden bg-sf-red-50 rounded-lg z-0"
                 src="${json.image_url}"
                 alt="A picture of the ${json.name} monster created by ${json.business}">
