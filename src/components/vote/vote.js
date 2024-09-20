@@ -13,7 +13,7 @@ class Vote extends HTMLElement {
         const year = 2024;
 
         // Fetch the HTML for the custom component.
-        const res = await fetch('/components/vote/vote.html');
+        const res = await fetch('../components/vote/vote.html');
         // Insert the HTML into the DOM.
         this.innerHTML = await res.text();
         // Fetch the available monsters from the public API.
