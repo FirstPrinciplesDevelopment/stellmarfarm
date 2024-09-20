@@ -93,7 +93,7 @@ class Vote extends HTMLElement {
                     <p>Your vote has been counted.</p>
                 </div>
                 <div class="py-8">
-                    <a class="rounded-md bg-sf-orange-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-sf-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sf-orange-600" href="index.html">Back to Stellmar Farm →</a>
+                    <a class="rounded-md bg-sf-orange-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-sf-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sf-orange-600" href="../index.html">Back to Stellmar Farm →</a>
                     </div>
                 <br><br>
                 </div>
