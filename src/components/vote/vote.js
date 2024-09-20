@@ -10,7 +10,7 @@ class Vote extends HTMLElement {
         const anon_api_key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZudm13b2RnenlibmNsYWFsa3h4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjA5MDIyMjQsImV4cCI6MjAzNjQ3ODIyNH0.5fPrBmMp7MbEhl62rX3IxKwVKOvrFiXg3fipe9fRLwA";
         const api_base_url = "https://vnvmwodgzybnclaalkxx.supabase.co";
         // TODO: default to current year.
-        const year = 2023;
+        const year = 2024;
 
         // Fetch the HTML for the custom component.
         const res = await fetch('/components/vote/vote.html');
