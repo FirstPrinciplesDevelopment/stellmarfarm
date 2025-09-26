@@ -8,7 +8,7 @@ class Vote extends HTMLElement {
     async connectedCallback() {
         // Constants for public API.
         const anon_api_key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZudm13b2RnenlibmNsYWFsa3h4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjA5MDIyMjQsImV4cCI6MjAzNjQ3ODIyNH0.5fPrBmMp7MbEhl62rX3IxKwVKOvrFiXg3fipe9fRLwA";
-        const api_base_url = "https://mtpsklaaabyikfsywzzj.supabase.co"; //"https://vnvmwodgzybnclaalkxx.supabase.co";
+        const api_base_url = "https://mtpsklaaabyikfsywzzj.supabase.co";
         // TODO: default to current year.
         const year = 2025;
 
