@@ -7,7 +7,7 @@ class Vote extends HTMLElement {
 
     async connectedCallback() {
         // Constants for public API.
-        const anon_api_key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZudm13b2RnenlibmNsYWFsa3h4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjA5MDIyMjQsImV4cCI6MjAzNjQ3ODIyNH0.5fPrBmMp7MbEhl62rX3IxKwVKOvrFiXg3fipe9fRLwA";
+        const anon_api_key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im10cHNrbGFhYWJ5aWtmc3l3enpqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTg5MDA2NzcsImV4cCI6MjA3NDQ3NjY3N30.GR3dZshUW3Mh6gWfJwYYKpr9L694E3G1dRcxYRee74E";
         const api_base_url = "https://mtpsklaaabyikfsywzzj.supabase.co"; 
         // TODO: default to current year.
         const year = 2025;
@@ -32,7 +32,7 @@ class Vote extends HTMLElement {
     }
 
     async getData(base_url, anon_key, year) {
-        const url = `${base_url}/storage/v1/object/public/monsters?season=eq.${year}`;
+        const url = `${base_url}/rest/v1/monsters?season=eq.${year}`;
 
         const monsterOptions = document.getElementById('monster-options');
 
