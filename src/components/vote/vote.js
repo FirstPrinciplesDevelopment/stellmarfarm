@@ -32,7 +32,7 @@ class Vote extends HTMLElement {
     }
 
     async getData(base_url, anon_key, year) {
-        const url = `${base_url}/rest/v1/monsters?season=eq.${year}`;
+        const url = `${base_url}/rest/v1/monsters?season=eq.${year}&order=position.asc`;
 
         const monsterOptions = document.getElementById('monster-options');
 
