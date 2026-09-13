@@ -7,10 +7,10 @@ class Vote extends HTMLElement {
 
     async connectedCallback() {
         // Constants for public API.
-        const anon_api_key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZudm13b2RnenlibmNsYWFsa3h4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjA5MDIyMjQsImV4cCI6MjAzNjQ3ODIyNH0.5fPrBmMp7MbEhl62rX3IxKwVKOvrFiXg3fipe9fRLwA";
-        const api_base_url = "https://vnvmwodgzybnclaalkxx.supabase.co";
+        const anon_api_key = "sb_publishable_wD_G33UZS_mj6qSlc1j2xA_3U5-fUDb";
+        const api_base_url = "https://aakjzxixncenvtqzbhvw.supabase.co";
         // TODO: default to current year.
-        const year = 2023;
+        const year = 2026;
 
         // Fetch the HTML for the custom component.
         const res = await fetch('/components/vote/vote.html');
@@ -119,7 +119,7 @@ class Vote extends HTMLElement {
 
     async submitForm(base_url, anon_key) {
         const url = `${base_url}/rest/v1/votes`;
-        
+
         const formContainer = document.getElementById('monster-vote-container');
 
         // Get form data.
@@ -154,11 +154,11 @@ class Vote extends HTMLElement {
             }
 
             // Make sure the user can see the message.
-            window.scrollTo({top: 0});
+            window.scrollTo({ top: 0 });
 
         } catch (error) {
-                // Something went wrong, show error message.
-                formContainer.innerHTML = this.buildErrorMessage();
+            // Something went wrong, show error message.
+            formContainer.innerHTML = this.buildErrorMessage();
         }
     }
 }
