@@ -6,12 +6,19 @@ class Vote extends HTMLElement {
     }
 
     async connectedCallback() {
+        
+
         // Constants for public API.
+        const anon_api_key = "sb_publishable_wD_G33UZS_mj6qSlc1j2xA_3U5-fUDb";
+        const api_base_url = "https://aakjzxixncenvtqzbhvw.supabase.co";
+        // TODO: default to current year.
+        const year = 2026;
+        /*
         const anon_api_key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im10cHNrbGFhYWJ5aWtmc3l3enpqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTg5MDA2NzcsImV4cCI6MjA3NDQ3NjY3N30.GR3dZshUW3Mh6gWfJwYYKpr9L694E3G1dRcxYRee74E";
         const api_base_url = "https://mtpsklaaabyikfsywzzj.supabase.co"; 
         // TODO: default to current year.
         const year = 2025;
-
+*/
         // Fetch the HTML for the custom component.
         const res = await fetch('../components/vote/vote.html');
         // Insert the HTML into the DOM.
